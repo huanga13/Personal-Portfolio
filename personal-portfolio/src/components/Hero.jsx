@@ -14,7 +14,7 @@ function ThreeModel() {
 
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(75, container.clientWidth / container.clientHeight, 0.1, 1000);
-    camera.position.set(0, 0.5, 5);
+    camera.position.set(0, 0.5, 4.5);
     camera.lookAt(0, 0, 0);
 
     const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
@@ -31,8 +31,8 @@ function ThreeModel() {
     const controls = new OrbitControls(camera, renderer.domElement);
     controls.enableDamping = true;
     controls.enableZoom = false;
-    controls.autoRotate = false;  // Maybe change
-    controls.autoRotateSpeed = 1.5;
+    controls.autoRotate = true;  // Maybe change
+    controls.autoRotateSpeed = 1;
     controls.target.set(0, -0.2, 0); // Adjust orbit target to focus on dog
 
     const loader = new GLTFLoader();
@@ -106,7 +106,12 @@ export default function Hero() {
       </h1>
 
       <span className={`${styles.scroll} ${styles.delay6}`} aria-hidden="true">
-        Scroll
+        <a href="#about">Scroll</a>
+        <img
+          src="/assets/arrow.svg"
+          alt=""
+          className={styles.scrollArrow}
+        />
       </span>
     </section>
   );

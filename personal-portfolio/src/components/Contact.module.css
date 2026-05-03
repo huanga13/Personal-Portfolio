@@ -1,0 +1,99 @@
+.footer {
+  padding: 120px var(--gutter);
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  position: relative;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.email {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-top: 6px;
+}
+
+/* 🔵 WEATHER CIRCLE */
+.weatherCircle {
+  position: absolute;
+  right: var(--gutter);
+  top: 40px;
+
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+
+  background: linear-gradient(135deg, #1e90ff, #0077ff);
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+
+  transition: transform 0.3s ease;
+}
+
+.weatherCircle:hover {
+  transform: scale(1.05);
+}
+
+.temp {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.city {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.desc {
+  font-size: 12px;
+  opacity: 0.7;
+  margin-top: 4px;
+}
+
+/* bottom row */
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--text-dim);
+  border-top: 1px solid var(--border);
+  padding-top: 20px;
+}
+
+.infoBlock {
+  display: flex;
+  flex-direction: column;
+  margin-top: 14px;
+  gap: 4px;
+}
+
+.label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-dim);
+}
+
+.value {
+  font-size: 14px;
+  color: var(--text-muted);
+}

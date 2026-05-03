@@ -1,5 +1,5 @@
 .about {
-  padding: 80px var(--gutter) 100px;
+  padding: 2rem var(--gutter) 10rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--gutter);

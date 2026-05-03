@@ -4,12 +4,11 @@
 
 .title {
   font-family: var(--font);
-  font-size: clamp(54px, 13vw, 96px);
-  font-weight: 900;
-  letter-spacing: -0.035em;
-  line-height: 0.95;
+  font-size: clamp(54px, 160px, 210px);
+  font-weight: 500;
+  line-height: 36px;
   color: var(--text);
-  margin-bottom: 52px;
+  margin-bottom: 7rem;
 }
 
 .list {
@@ -18,14 +17,14 @@
 
 .item {
   display: flex;
-  align-items: center;
-  gap: 20px;
-  padding: 26px 0;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px 0;
   border-bottom: 1px solid var(--border);
-  cursor: default;
+  cursor: pointer;
   transition:
     padding-left 0.35s cubic-bezier(0.16, 1, 0.3, 1),
-    border-color  0.25s ease;
+    border-color 0.25s ease;
 }
 
 .item:hover {
@@ -42,13 +41,26 @@
   color: var(--text-muted);
 }
 
-.num {
-  font-size: 10px;
-  font-weight: 400;
-  letter-spacing: 0.1em;
-  color: var(--text-dim);
-  min-width: 24px;
-  flex-shrink: 0;
+.desc {
+  font-family: var(--font);
+  font-size: 20px;
+  line-height: 2rem;
+  color:rgb(214, 214, 214);
+
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+
+  transition: all 0.4s ease;
+  margin-top: 0;
+}
+
+.open .desc {
+  max-height: 200px;
+  opacity: 1;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .content {
@@ -60,38 +72,29 @@
 }
 
 .role {
-  font-family: var(--font);
-  font-size: clamp(22px, 4.5vw, 30px);
-  font-weight: 700;
-  line-height: 1.2;
+  font-family: var(--font-light);
+  font-size: clamp(22px, 60px, 80px);
+  line-height: 60px;
   color: var(--text);
 }
 
-.at {
-  font-family: var(--font);
-  font-style: italic;
-  font-size: 14px;
-  font-weight: 400;
-  color: var(--text-dim);
-}
-
 .company {
-  font-size: 13px;
-  font-weight: 400;
+  font-size: 30px;
   letter-spacing: 0.04em;
   color: var(--text-dim);
   transition: color 0.2s;
+  font-family: var(--font-light); 
+  margin-left: 2rem;
 }
 
 .arrow {
   font-size: 18px;
   color: var(--text-muted);
-  opacity: 0;
-  transform: translateX(-8px);
-  transition:
-    opacity   0.25s ease,
-    transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-  flex-shrink: 0;
+  transition: transform 0.3s ease, opacity 0.25s ease;
+}
+
+.item:hover .arrow {
+  transform: translateX(6px);
 }
 
 @media (max-width: 600px) {

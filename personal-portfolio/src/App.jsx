@@ -4,8 +4,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Experience from './components/Experience';
 import Artwork from './components/Artwork';
-import Fun from './components/Footer';
-import Footer from './components/Footer';
+import Contact from './components/Contact';
 import './App.css';
 
 export default function App() {
@@ -19,9 +18,8 @@ export default function App() {
         <About />
         <Experience />
         <Artwork />
-        <Fun />
       </main>
-      <Footer />
+      <Contact />
     </>
   );
 }

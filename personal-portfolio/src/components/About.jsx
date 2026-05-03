@@ -18,7 +18,7 @@ export default function About() {
       <div className={styles.content}>
         <p>
           I am a Software Engineer with over 4 years of experience. Currently
-          completing a Bachelor's in Computer Science and Design.
+          completing a Bachelor's in Computer Science and Design at the Washington University in St. Louis.
         </p>
         <p>NYC-based, and I love to oil paint.</p>
       </div>

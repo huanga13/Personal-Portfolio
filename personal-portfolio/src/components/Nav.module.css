@@ -8,6 +8,7 @@
   align-items: flex-start;
   font-family: var(--font);
   text-transform: uppercase;
+  position: fixed;
 }
 
 .name {

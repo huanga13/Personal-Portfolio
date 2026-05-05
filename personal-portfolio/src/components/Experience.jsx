@@ -18,13 +18,13 @@ const ROLES = [
     id: '02', 
     role: 'Cybersecurity Researcher', 
     company: 'Montclair University',
-    desc: 'Researched vulnerabilities in web applications and developed mitigation strategies for modern attack vectors.'
+    desc: 'Researched the speed and efficacy of Luby Transform codes by programming a custom Luby Transform encoding and decoding algorithm.'
   },
   { 
     id: '03', 
     role: 'Tech Consultant', 
     company: 'Bear Studios',
-    desc: 'Helped clients design secure and scalable software systems with a focus on architecture and risk reduction.'
+    desc: 'Helped clients design secure and scalable software systems, including mobile applications, websites, and more.'
   },
 ];
 

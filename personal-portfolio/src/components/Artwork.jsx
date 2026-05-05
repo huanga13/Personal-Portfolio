@@ -2,7 +2,14 @@ import { useRef, useState, useEffect } from 'react';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 import styles from './Artwork.module.css';
 
-const ARTWORK_IMAGES = Array(9).fill(null);
+const ARTWORK_IMAGES = [
+  '../../public/assets/painting1.jpg',
+  '../../public/assets/painting2.jpg',
+  '../../public/assets/painting3.jpg',
+  '../../public/assets/painting4.jpg',
+  '../../public/assets/painting5.jpg',
+  '../../public/assets/painting6.jpg'
+];
 
 function ArtworkCell({ src, index, onOpen }) {
   const cellRef = useRef(null);
@@ -64,7 +71,7 @@ export default function Artwork() {
 
   return (
     <section className={styles.section} id="artwork">
-      <div className={`${styles.header} reveal`} ref={headerRef}>
+      <div className={styles.header}>
         <h2 className={styles.title}>Artwork</h2>
         <div className={styles.desc}>
           <p>I love to oil paint. I am always creating.</p>

@@ -75,7 +75,7 @@
   letter-spacing: 0.05em;
   color: var(--text);
   display: flex;
-  flex-direction: row; /* 🔥 change this */
+  flex-direction: row;
   align-items: center;
   animation: fadeIn 1s ease both;
   transform: translateY(-40px);
